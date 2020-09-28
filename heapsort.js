@@ -10,7 +10,7 @@ function heapsort(arr){
         let temp = arr[0];
         arr[0] = arr[i];
         arr[i] = temp;
-        console.log(array);
+        //console.log(array);
         heapify(arr, i, 0);
     }
 }
@@ -36,6 +36,7 @@ function heapify(a, heapsize, i){
         let temp = a[i];
         a[i] = a[max];
         a[max] = temp;
+        console.log(array);
         heapify(a, heapsize, max);
     }
 }
